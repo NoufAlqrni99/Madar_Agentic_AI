@@ -1,0 +1,14 @@
+# Environment variables and API keys
+.env
+*.env
+
+# Secrets
+secrets.*
+*.key
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
