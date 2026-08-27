@@ -250,28 +250,28 @@ Madar_Agentic_AI/
 
 ## Capstone Requirements Demonstrated
 
-### 1. Agent Fundamentals — 15 pts
+### 1. Agent Fundamentals 
 Real tool calls and Pydantic structured output using `with_structured_output` are demonstrated.
 
-### 2. Multi-Agent / Routing Architecture — 15 pts
+### 2. Multi-Agent / Routing Architecture 
 **Track A — Supervisor + Workers** is implemented using LLM-driven agent handoffs rather than keyword matching.
 
-### 3. RAG Pipeline — 15 pts
+### 3. RAG Pipeline 
 Operational documents are loaded, split, embedded, stored in FAISS, and retrieved through Agentic RAG.
 
-### 4. Context & State Management — 15 pts
+### 4. Context & State Management 
 Short-term state uses a checkpointer and `thread_id`, while long-term facts are stored separately and verified through a cross-thread test.
 
-### 5. Human-in-the-Loop — 10 pts
+### 5. Human-in-the-Loop 
 Both `interrupt()` and `Command(resume=...)` are executed and demonstrated.
 
-### 6. LangGraph Functional API & Error Handling — 15 pts
+### 6. LangGraph Functional API & Error Handling 
 The project uses `@task`, `@entrypoint`, a real `RetryPolicy`, and a separate human-approval strategy.
 
-### 7. Workflow Pattern — 10 pts
+### 7. Workflow Pattern 
 The project explicitly implements the **Orchestrator–Worker** pattern because event operations contain specialized domains coordinated by one Supervisor.
 
-### 8. LangSmith Observability — 5 pts
+### 8. LangSmith Observability 
 Tracing is enabled to inspect routing, tool calls, handoffs, and multi-agent execution.
 
 ---
